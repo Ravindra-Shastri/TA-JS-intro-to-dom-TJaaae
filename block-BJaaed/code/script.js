@@ -1,6 +1,7 @@
 let ul = document.querySelector('.list');
 details.books.forEach((elm) =>{
     let li = document.createElement("li");
+
     let img = document.createElement("img");
     img.src = elm.image;
 
@@ -16,6 +17,6 @@ details.books.forEach((elm) =>{
     btn.innerText= "Buy Now";
     btn.href=elm.website;
     li.append(img,title,author,btn);
-    ul.append(li)
-})
+    ul.append(li);
+})                                                    
 
